@@ -9,39 +9,32 @@ namespace Test1
     internal class Program
     {
 
-        static void Main(string[] args)
+        static void Main(string[] args)//entry
         {
-            int alder = 8;
-                
-
-            if (alder > 17)
-            {
-                //Console.WriteLine("Gammel nok til å kjøre bil");
-            }
-            else
-            {
-                //Console.WriteLine("ikke Gammel nok til å kjøre bil");
-            }
-
+            Program prog=new Program();
+            //prog.Oppgave1();
+            prog.PrintStar();
 
             
-            
 
+        }
 
+        private void Oppgave1()
+        {
             ///her er en oppg 0109
             ///oppg om temp
             ///
             Console.WriteLine("tast inn temp");
             //lese inn verdi fra console
-            string stringTemp=Console.ReadLine();
+            string stringTemp = Console.ReadLine();
             //konvertere stringen til et tall ved å bruke parse
-            int temp=int.Parse(stringTemp);
+            int temp = int.Parse(stringTemp);
 
-            if(temp>0)
+            if (temp > 0)
             {
                 Console.WriteLine("Plussgrader");
             }
-            else if(temp<0)
+            else if (temp < 0)
             {
                 Console.WriteLine("minusgrader");
             }
@@ -59,12 +52,16 @@ namespace Test1
             //en ny oppg
             int test = 1;
             Console.ReadKey();
-
         }
 
-        private string Test()
+
+        private void PrintStar()
         {
-            return "tull";
+            int num = 7;
+
+            for(int i=0;i<=num;i++)
+                Console.WriteLine("*");
         }
+
     }
 }
