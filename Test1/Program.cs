@@ -57,9 +57,14 @@ namespace Test1
 
 
             //en ny oppg
-
+            int test = 1;
             Console.ReadKey();
 
+        }
+
+        private string Test()
+        {
+            return "tull";
         }
     }
 }
